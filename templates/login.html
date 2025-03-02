@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#login-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#username h1, 
+#pasword-block h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#user-input, 
+#password-input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}
+
+#success-message, 
+#failure-message, 
+#dne-message {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#success-message {
+    color: green;
+}
+
+#failure-message, 
+#dne-message {
+    color: red;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id = "login-header">
+        <h1>Login</h1>
+    </div>
+
+    <div id = "username">
+        <h1>Username</h1>
+
+    </div>
+
+    <div id="username-input">
+        <input id="user-input" placeholder="Enter username here : ">
+
+    </div>
+
+    <div id = "pasword-block">
+        <h1>Password</h1>
+
+    </div>
+
+    <div id="password-input-block">
+        <input id="password-input" placeholder="Enter password here : ">
+        
+    </div>
+
+    <button id="submit-btn">Submit</button>
+
+
+    <h1 id="success-message"> Log in successful!</h1>
+
+    <h1 id="failure-message"> Invalid username or password</h1>
+
+    <h1 id="dne-message"> User does not exist </h1>
+
+    <script src="/static/log_in_functions.js"></script>
+</body>

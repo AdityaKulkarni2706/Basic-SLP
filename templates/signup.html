@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#sign-up-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#username-text, 
+#password-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+#username-input, 
+#password-input {
+    width: 250px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#credentials-submit {
+    margin-top: 20px;
+}
+
+#cred-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#cred-btn:hover {
+    background-color: #0056b3;
+}
+
+#success-message, 
+#failure-message {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#success-message {
+    color: green;
+}
+
+#failure-message {
+    color: red;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="sign-up-title">
+        Sign Up
+    </div>
+    <br>
+
+    <div id="username-text">
+        Username
+
+    </div>
+
+    <div id="username-text-box">
+        <input id="username-input" placeholder="Enter username here:">
+    </div>
+
+    <div id="password-text">
+        Password
+
+    </div>
+
+    <div id="password-text-box">
+        <input id="password-input" placeholder="Enter password here:">
+    </div>
+
+    <br>
+
+    <div id="credentials-submit">
+        <button id="cred-btn">Submit</button>
+
+    </div>
+
+    <a href="http://localhost:5000/login">Log in</a>
+    
+    <h1 id="success-message"> Signed up!</h1>
+
+    <h1 id="failure-message"> User already exists!</h1>
+    
+
+
+    <script src="/static/sign_up_functions.js"></script>
+
+</body>
